@@ -11,7 +11,6 @@ import static com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility.NONE;
 import static org.springframework.http.HttpStatus.FORBIDDEN;
 
 
-@SuppressWarnings("java:S110")
 @ResponseStatus(value = FORBIDDEN)
 @JsonAutoDetect(fieldVisibility = NONE, getterVisibility = NONE)
 public class ForbiddenException extends BusinessException {
